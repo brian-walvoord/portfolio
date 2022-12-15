@@ -1,0 +1,80 @@
+body {
+  background-color: #495579;
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#header-container {
+  display: flex;
+  justify-content: center;
+  background-color: #1f1f1f;
+  margin-bottom: 3rem;
+}
+
+#title {
+  font-size: 100px;
+  color: white;
+}
+
+#headshot {
+  height: 600px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 10%;
+  margin-left: 4rem;
+}
+
+#about-container {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+#about-text {
+  margin-left: 8rem;
+  font-size: 40px;
+  margin-right: 6rem;
+  color: white;
+}
+
+#projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: center;
+  margin-bottom: 3rem;
+  grid-gap: 1%;
+  background-color: #1f1f1f;
+  padding-top: 3rem;
+}
+
+.project {
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.project:hover {
+  opacity: 50%;
+}
+
+.project:active {
+  opacity: 100%;
+}
+
+.a {
+  background-image: url("../images/library.png");
+  background-size:cover;
+}
+
+.b {
+  background-image: url("../images/translation_section.png");
+  background-size: cover;
+}
+
+.c {
+  background-image: url("../images/homepage.png");
+  background-size: cover;
+}
