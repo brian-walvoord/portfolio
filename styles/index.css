@@ -4,6 +4,8 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+/*----------------------*/
+/* aboutme view */
 #header-container {
   display: flex;
   justify-content: center;
@@ -36,14 +38,68 @@ body {
   color: white;
 }
 
+
+
+/*------------------------------*/
+/* tech view */
+#tech-header {
+  padding-top: 3rem;
+  font-size: 50px;
+  color: white;
+  background-color: #1f1f1f;
+  text-align: center;
+}
+
+#tech-container {
+  padding-bottom: 3rem;
+  background-color: #1f1f1f;
+}
+
+.icon {
+  height: auto;
+  width: 65px;
+}
+
+#stack-container {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.stack-title {
+  color: white;
+  font-size: 25px;
+  margin-top: 1rem;;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+
+
+/*--------------------------*/
+/* projects view */
+#projects-header {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
 #projects-container {
   display: grid;
   grid-template-columns: repeat(3, 30%);
   justify-content: center;
   margin-bottom: 3rem;
   grid-gap: 1%;
-  background-color: #1f1f1f;
-  padding-top: 3rem;
+  background-color: #495579;
 }
 
 .project {
