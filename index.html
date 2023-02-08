@@ -24,15 +24,15 @@
           </div>
           <div id="navbarMenuHeroC" class="navbar-menu has-text-centered">
             <div class="navbar-end">
-              <a class="navbar-item">Home</a>
-              <a class="navbar-item">About Me</a>
-              <a class="navbar-item">Portfolio</a>
-              <a class="navbar-item">Tech</a>
+              <a href="#Home" class="navbar-item">Home</a>
+              <a href="#About-Me" class="navbar-item">About Me</a>
+              <a href="#Portfolio" class="navbar-item">Portfolio</a>
             </div>
           </div>
         </header>
       </div>
-      <div class="hero-body">
+
+      <div id="Home" class="hero-body">
         <div class="container has-text-centered">
           <p id="page-title" class="title">
             Brian Walvoord
@@ -45,7 +45,7 @@
       <div class="hero-foot"></div>
     </section>
 
-    <section class="section about-me">
+    <section id="About-Me" class="section about-me">
       <div class="container">
         <div class="tile is-ancestor">
           <div class="tile is-parent is-7 appear">
@@ -91,7 +91,7 @@
       </div>
     </section>
 
-    <section class="hero portfolio">
+    <section id="Portfolio" class="hero portfolio">
       <div class="hero has-text-centered pb-0">
         <div class="hero-body">
           <p id="portfolio-title" class="title">My Portfolio</p>
@@ -101,7 +101,7 @@
       <div id="hero-1" class="hero">
         <div class="container">
           <div class="hero-body">
-            <div id="portfolio-box" class="box">
+            <div id="portfolio-box" class="box" onclick="window.open('https://mealtime-web.com')">
               <img class="portfolio-image" src="./images/meal-packs.png">
               <div class="portfolio-text">
                 <h1 class="portfolio-item-title">Mealtime</h1>
@@ -115,7 +115,7 @@
       <div id="hero-2" class="hero">
         <div class="container">
           <div class="hero-body">
-            <div id="portfolio-box" class="box">
+            <div id="portfolio-box" class="box" onclick="window.open('https://github.com/brian-walvoord/saga')">
               <img class="portfolio-image" src="./images/homepage.png">
               <div class="portfolio-text">
                 <h1 class="portfolio-item-title">Saga</h1>
@@ -129,7 +129,7 @@
       <div id="hero-3" class="hero">
         <div class="container">
           <div class="hero-body">
-            <div id="portfolio-box" class="box">
+            <div id="portfolio-box" class="box" onclick="window.open('https://github.com/brian-walvoord/GGs')">
               <img class="portfolio-image" src="./images/library.png">
               <div class="portfolio-text">
                 <h1 class="portfolio-item-title">GGs</h1>
@@ -143,7 +143,7 @@
       <div id="hero-4" class="hero">
         <div class="container">
           <div class="hero-body">
-            <div id="portfolio-box" class="box">
+            <div id="portfolio-box" class="box" onclick="window.open('https://github.com/brian-walvoord/MTG-translate')">
               <img class="portfolio-image" src="./images/translation_section.png">
               <div class="portfolio-text">
                 <h1 class="portfolio-item-title">MTGTranslate</h1>
@@ -155,6 +155,8 @@
         </div>
       </div>
     </section>
+
+    
 
     <section class="section footer"></section>
 
