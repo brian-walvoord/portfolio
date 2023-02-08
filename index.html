@@ -2,13 +2,214 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/index.css">
     <title>Brian Codes</title>
   </head>
 
   <body>
-    <div id="page-container">
+    <section class="hero is-fullheight top-hero">
+      <div class="hero-head">
+        <header class="navbar is-fixed-top">
+          <div class="container">
+            <span class="navbar-burger" data-target="navbarMenuHeroC">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroC" class="navbar-menu has-text-centered">
+            <div class="navbar-end">
+              <a class="navbar-item">Home</a>
+              <a class="navbar-item">About Me</a>
+              <a class="navbar-item">Portfolio</a>
+              <a class="navbar-item">Tech</a>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p id="page-title" class="title">
+            Brian Walvoord
+          </p>
+          <p id="subtitle" class="subtitle">
+            Full Stack Developer
+          </p>
+        </div>
+      </div>
+      <div class="hero-foot"></div>
+    </section>
+
+    <section class="section about-me">
+      <div class="container">
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-7 appear">
+            <article id="article" class="tile is-child notification">
+              <div class="box">
+                <div id="headshot-box" class="is-flex is-align-items-center is-justify-content-center">
+                  <img class="headshot" src="./images/headshot.jpg">
+                  <p class="title">👋 Hi, I'm Brian. I like to build cool things.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="tile is-5 appear">
+            <div class="tile is-parent">
+              <article id="article" class="tile is-child notification">
+                <div id="box" class="box is-parent is-flex is-justify-content-center is-align-items-center is-flex-wrap-wrap">
+                  <div id="emoji-tile" class="tile is-child has-text-centered">
+                    <h1 class="emoji cycle">🏕️</h1>
+                  </div>
+                  <div id="emoji-tile" class="tile is-child has-text-centered">
+                    <h1 class="emoji cycle">🎵</h1>
+                  </div>
+                  <div id="emoji-tile" class="tile is-child has-text-centered">
+                    <h1 class="emoji cycle">💻</h1>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-ancestor appear">
+          <div class="tile is-parent">
+            <article id="article" class="tile is-vertical is-child notification">
+              <div class="box">
+                <p class="title">About me</p>
+                <div class="content">
+                  <p>I'm a self-taught programmer</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero portfolio">
+      <div class="hero has-text-centered pb-0">
+        <div class="hero-body">
+          <p id="portfolio-title" class="title">My Portfolio</p>
+          <p id="portfolio-subtitle" class="subtitle">Things I've worked on recently</p>
+        </div>
+      </div>
+      <div id="hero-1" class="hero">
+        <div class="container">
+          <div class="hero-body">
+            <div id="portfolio-box" class="box">
+              <img class="portfolio-image" src="./images/meal-packs.png">
+              <div class="portfolio-text">
+                <h1 class="portfolio-item-title">Mealtime</h1>
+                <h3 class="portfolio-item-description mb-1"><strong>Roles: Product Owner, Lead Frontend Developer</strong></h3>
+                <h3 class="portfolio-item-description">Mealtime is a business focused product that generates meal packs for local grocery stores. Think HelloFresh, but at the local store level. As the product owner and lead frontend developer, I helped align the development team towards the product goals and created the design for the frontend of the app.</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="hero-2" class="hero">
+        <div class="container">
+          <div class="hero-body">
+            <div id="portfolio-box" class="box">
+              <img class="portfolio-image" src="./images/homepage.png">
+              <div class="portfolio-text">
+                <h1 class="portfolio-item-title">Saga</h1>
+                <h3 class="portfolio-item-description mb-1"><strong>Roles: Tech Lead, Full-Stack Developer</strong></h3>
+                <h3 class="portfolio-item-description">Saga is an app that aggregates movie and tv show data. As the tech lead for this product, I delegated tasks related to all technical aspects of Saga and oversaw the development process of the app.</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="hero-3" class="hero">
+        <div class="container">
+          <div class="hero-body">
+            <div id="portfolio-box" class="box">
+              <img class="portfolio-image" src="./images/library.png">
+              <div class="portfolio-text">
+                <h1 class="portfolio-item-title">GGs</h1>
+                <h3 class="portfolio-item-description mb-1">Solo Project</h3>
+                <h3 class="portfolio-item-description">GG's is a full stack solo project I developed to help log user data related to their favorite video games. Users can search for games and leave personal ratings and comments on the games they love (and hate).</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="hero-4" class="hero">
+        <div class="container">
+          <div class="hero-body">
+            <div id="portfolio-box" class="box">
+              <img class="portfolio-image" src="./images/translation_section.png">
+              <div class="portfolio-text">
+                <h1 class="portfolio-item-title">MTGTranslate</h1>
+                <h3 class="portfolio-item-description mb-1">Solo Project</h3>
+                <h3 class="portfolio-item-description">This is one of my first solo projects. MTGTranslate takes English Magic: The Gathering cards and translates them to Japanese. This project is unique as it uses Python and Django for the backend with minimal frontend.</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section footer"></section>
+
+
+    <!-- <nav class="navbar is-fixed-top is-link" role="navigation" aria-label="main navigation">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item">Home</a>
+          <a class="navbar-item">About Me</a>
+          <a class="navbar-item">Portfolio</a>
+          <a class="navbar-item">Tech</a>
+          <a class="navbar-item">Links</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero is-fullheight-with-navbar is-link">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title">
+            Brian Walvoord
+          </p>
+          <p class="subtitle">
+            Full Stack Developer
+          </p>
+        </div>
+      </div>
+    </section> -->
+
+
+    <!-- <section class="section">
+      <div class="container">
+        <div class="columns has-text-centered is-centered">
+          <div class="column is-one-quarter">
+            <button class="button">first column</button>
+          </div>
+          <div class="column is-one-quarter">
+            <button class="button">second column</button>
+          </div>
+          <div class="column is-one-quarter">
+            <button class="button">third column</button>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+
+    <!-- <div id="page-container">
       <div id="header-container">
         <h1 id="title">Brian Walvoord</h1>
       </div>
@@ -19,6 +220,7 @@
           <p>👋 Hello!<br><br>Thank you for visiting! I'm a full-stack developer who enjoys building fun and useful web applications. In addition to building great apps, I am a classically trained musician and enjoy spending my free time listening to and performing music.<br><br>Check out my projects or my github to get a better idea of what coding projects interest me!</p>
         </div>
       </div>
+      <button class="button">Click me</button>
 
       <div id="tech-container">
         <h1 id="tech-header">My Tech Stack</h1>
@@ -92,7 +294,7 @@
         <div class="project b"></div>
         <div class="project c"></div>
       </div>
-    </div>
+    </div> -->
   </body>
 
   <script src="index.js"></script>
