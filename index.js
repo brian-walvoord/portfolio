@@ -1,5 +1,5 @@
 window.onload = function () {
-  let loading = document.getElementsByClassName("center")[0];
+  let loading = document.getElementsByClassName("preloader")[0];
   loading.style.opacity = 0;
 };
 

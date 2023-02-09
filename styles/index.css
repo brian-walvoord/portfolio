@@ -1,6 +1,6 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
-.center {
+.preloader {
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -16,7 +16,7 @@
 .wave {
   width: 5px;
   height: 100px;
-  background: linear-gradient(45deg, cyan, #fff);
+  background: linear-gradient(45deg, rgb(0, 4, 255), #fff);
   margin: 10px;
   animation: wave 1s linear infinite;
   border-radius: 20px;
@@ -52,13 +52,13 @@
 
 @keyframes wave {
   0% {
-    transform: scale(0);
-  }
-  50% {
     transform: scale(1);
   }
-  100% {
+  50% {
     transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
@@ -100,7 +100,6 @@ span {
 .top-hero {
   background-image: url("../images/stars.jpg");
   background-size: cover;
-  /* background-color: black; */
 }
 
 .title, .subtitle, .navbar-item {
