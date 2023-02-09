@@ -1,3 +1,8 @@
+window.onload = function () {
+  let loading = document.getElementsByClassName("center")[0];
+  loading.style.opacity = 0;
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(
