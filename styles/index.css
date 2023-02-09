@@ -73,11 +73,15 @@ span {
 }
 
 .headshot {
-  height: 300px;
-  width: 400px;
+  height: 400px;
+  width: 500px;
   object-fit: cover;
-  border-radius: 10px;
-  margin-right: 2rem;
+  border-radius: 5px;
+}
+
+#first-container {
+  display: flex;
+  justify-content: center;
 }
 
 .appear {
@@ -105,18 +109,8 @@ span {
 }
 
 .appear.inview:nth-child(3) {
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
-}
-
-.appear.inview:nth-child(4) {
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
-}
-
-.appear.inview:nth-child(5) {
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
 }
 
 .item {
@@ -148,20 +142,33 @@ span {
   height: 100%;
 }
 
-.footer {
-  height: 100px;
-  background-color: #1f1f1f;
+#about-me-container {
+  margin-top: 5rem;
 }
 
-.emoji {
-  font-size: 50px;
-  margin: 2rem;
-  cursor: pointer;
-  transition: .1s linear;
+.about-me-icon {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.emoji:hover {
-  font-size: 60px;
+h4 {
+  font-size: 21px;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  font-weight: 600;
+  color:blue;
+}
+
+.travel-img {
+  height: 110px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: .3rem;
+}
+
+.music-player {
+  margin-top: 3rem;
 }
 
 
@@ -234,7 +241,41 @@ span {
 
 
 
+/* FOOTER */
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social {
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: white;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.footer {
+  height: 200px;
+  background-color: #1f1f1f;
+}
+
+.footer-text {
+  text-align: center;
+  color: rgb(157, 157, 157);
+  margin-top: 40px;
+}
+
 /* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+  #first-container {
+    display: block;
+  }
+}
 
 @media screen and (max-width: 600px) {
   #page-title {
@@ -242,10 +283,6 @@ span {
   }
   #subtitle {
     font-size: 30px;
-  }
-  .headshot {
-    margin-right: 0px;
-    margin-bottom: 2rem;
   }
   #headshot-box {
     flex-wrap: wrap;

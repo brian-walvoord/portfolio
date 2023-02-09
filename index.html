@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/index.css">
+    <script src = "https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
     <title>Brian Codes</title>
   </head>
 
@@ -47,47 +48,97 @@
 
     <section id="About-Me" class="section about-me">
       <div class="container">
-        <div class="tile is-ancestor">
-          <div class="tile is-parent is-7 appear">
-            <article id="article" class="tile is-child notification">
-              <div class="box">
-                <div id="headshot-box" class="is-flex is-align-items-center is-justify-content-center">
-                  <img class="headshot" src="./images/headshot.jpg">
-                  <p class="title">👋 Hi, I'm Brian. I like to build cool things.</p>
-                </div>
+
+        <div class="container">
+          <div id="first-container" class="tile is-ancestor">
+            <div class="tile is-parent is-5 appear is-flex is-justify-content-center">
+              <div id="headshot-box" class="is-flex is-align-items-center is-justify-content-center">
+                <img class="tile is-child headshot" src="./images/headshot.jpg">
               </div>
-            </article>
-          </div>
-          <div class="tile is-5 appear">
-            <div class="tile is-parent">
-              <article id="article" class="tile is-child notification">
-                <div id="box" class="box is-parent is-flex is-justify-content-center is-align-items-center is-flex-wrap-wrap">
-                  <div id="emoji-tile" class="tile is-child has-text-centered">
-                    <h1 class="emoji cycle">🏕️</h1>
+            </div>
+            <div class="tile is-5 appear">
+              <div class="tile is-parent">
+                <article id="article" class="tile is-child notification">
+                  <div id="box" class="box is-parent is-flex is-justify-content-center is-align-items-center">
+                    <div class="tile is-child has-text-centered">
+                      <h1 class="title">👋 Hello, I'm Brian. I like to build engaging and useful products, and love what I do.</h1>
+                    </div>
                   </div>
-                  <div id="emoji-tile" class="tile is-child has-text-centered">
-                    <h1 class="emoji cycle">🎵</h1>
-                  </div>
-                  <div id="emoji-tile" class="tile is-child has-text-centered">
-                    <h1 class="emoji cycle">💻</h1>
-                  </div>
-                </div>
-              </article>
+                </article>
+              </div>
             </div>
           </div>
         </div>
-        <div class="tile is-ancestor appear">
-          <div class="tile is-parent">
-            <article id="article" class="tile is-vertical is-child notification">
-              <div class="box">
-                <p class="title">About me</p>
-                <div class="content">
-                  <p>I'm a self-taught programmer</p>
-                </div>
+
+        <div class="container">
+          <div id="about-me-container" class="tile is-ancestor">
+            <div class="tile is-4 appear">
+              <div class="tile is-parent">
+                <article id="article" class="tile is-child notification">
+                  <div id="box" class="box is-parent is-flex is-justify-content-center is-flex-wrap-wrap">
+                    <div class="tile is-child has-text-centered">
+                      <span class="icon about-me-icon">
+                        <i alt="gmail-link" class="fas fa-2x fa-desktop has-text-black"></i>
+                      </span>
+                      <h1 class="title">Developer</h1>
+                      <p>I enjoy developing full stack apps that solve complex problems in simple ways.</p>
+                      <h4>Favorite Tools</h4>
+                      <ul>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>Sass</li>
+                        <li>Bulma</li>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>PostgreSQL</li>
+                        <li>Vercel</li>
+                        <li>Git / Github</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
               </div>
-            </article>
+            </div>
+            <div class="tile is-4 appear">
+              <div class="tile is-parent">
+                <article id="article" class="tile is-child notification">
+                  <div id="box" class="box is-parent is-flex is-justify-content-center is-flex-wrap-wrap">
+                    <div class="tile is-child has-text-centered">
+                      <span class="icon about-me-icon">
+                        <i class="fab fa-2x fa-fly has-text-black"></i>
+                      </span>
+                      <h1 class="title">Traveler</h1>
+                      <p>I love exploring new places and work to preserve the natural beauty of the world around us.</p>
+                      <h4>Recent Travel Pictures</h4>
+                      <div id="img-container">
+                        <img class="travel-img" alt="Japan Image" src="./images/mt-bandai.jpg">
+                        <img class="travel-img" alt="Ireland Image" src="./images/ireland.jpg">
+                        <img class="travel-img" alt="Yamadera Image" src="./images/yamadera.jpg">   
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="tile is-4 appear">
+              <div class="tile is-parent">
+                <article id="article" class="tile is-child notification">
+                  <div id="box" class="box is-parent is-flex is-justify-content-center is-flex-wrap-wrap">
+                    <div class="tile is-child has-text-centered">
+                      <span class="icon about-me-icon">
+                        <i alt="gmail-link" class="fas fa-2x fa-headphones has-text-black"></i>
+                      </span>
+                      <h1 class="title">Musician</h1>
+                      <p>I am a classically trained musician and have performed across the world.</p>
+                      <h4>What I'm listening to now</h4>
+                      <iframe class="music-player" style="border-radius:12px" src="https://open.spotify.com/embed/album/2UxxjlRWyWovbWCZCOCpyu?utm_source=generator&theme=0" width="100%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                  </div>
+                </article>
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -156,147 +207,25 @@
       </div>
     </section>
 
-    
-
-    <section class="section footer"></section>
-
-
-    <!-- <nav class="navbar is-fixed-top is-link" role="navigation" aria-label="main navigation">
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-end">
-          <a class="navbar-item">Home</a>
-          <a class="navbar-item">About Me</a>
-          <a class="navbar-item">Portfolio</a>
-          <a class="navbar-item">Tech</a>
-          <a class="navbar-item">Links</a>
+    <section class="section footer">
+      <div class="container icons-container"></div>
+        <div class="level icons">
+          <a href="mailto:brian.walvoord@gmail.com">
+            <span class="icon social">
+              <i alt="gmail-link" class="fas fa-lg fa-envelope has-text-black"></i>
+            </span>
+          </a>
+          <span class="icon social" onclick="window.open('https://github.com/brian-walvoord')">
+            <img alt="github-link" src="./images/icons/github-icon.svg">
+          </span>
+          <span class="icon social" onclick="window.open('https://linkedin.com/in/brian-walvoord/')">
+            <img alt="linkedin-link" src="./images/icons/linkedin-icon.svg">
+          </span>
         </div>
+        <p class="footer-text">Made by Brian Walvoord</p>
       </div>
-    </nav>
+    </section>
 
-    <section class="hero is-fullheight-with-navbar is-link">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <p class="title">
-            Brian Walvoord
-          </p>
-          <p class="subtitle">
-            Full Stack Developer
-          </p>
-        </div>
-      </div>
-    </section> -->
-
-
-    <!-- <section class="section">
-      <div class="container">
-        <div class="columns has-text-centered is-centered">
-          <div class="column is-one-quarter">
-            <button class="button">first column</button>
-          </div>
-          <div class="column is-one-quarter">
-            <button class="button">second column</button>
-          </div>
-          <div class="column is-one-quarter">
-            <button class="button">third column</button>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-
-
-    <!-- <div id="page-container">
-      <div id="header-container">
-        <h1 id="title">Brian Walvoord</h1>
-      </div>
-
-      <div id="about-container">
-        <img id="headshot" alt="headshot" src="./images/headshot.jpg">
-        <div id="about-text">
-          <p>👋 Hello!<br><br>Thank you for visiting! I'm a full-stack developer who enjoys building fun and useful web applications. In addition to building great apps, I am a classically trained musician and enjoy spending my free time listening to and performing music.<br><br>Check out my projects or my github to get a better idea of what coding projects interest me!</p>
-        </div>
-      </div>
-      <button class="button">Click me</button>
-
-      <div id="tech-container">
-        <h1 id="tech-header">My Tech Stack</h1>
-        <div id="stack-container">
-          <div class="icon-container">
-            <image class="icon" alt="html icon" src="./images/icons/html.svg">
-            <p class="stack-title">HTML</p>
-          </div>
-          <div class="icon-container">
-            <image class="icon" alt="css icon" src="./images/icons/css.svg">
-            <p class="stack-title">CSS</p>
-          </div>
-          <div class="icon-container">
-            <image class="icon" alt="sass icon" src="./images/icons/sass.png">
-            <p class="stack-title">Sass</p>
-          </div>
-          <div class="icon-container">
-            <image class="icon" alt="javascript icon" src="./images/icons/javascript.svg">
-            <p class="stack-title">JavaScript</p>
-          </div>
-          <div class="icon-container">
-            <image class="icon" alt="typescript icon" src="./images/icons/typescript.png">
-            <p class="stack-title">TypeScript</p>
-          </div>
-          <div class="icon-container">
-            <image class="icon" alt="react icon" src="./images/icons/react.svg">
-            <p class="stack-title">React</p>
-          </div>
-          <div class="icon-container">
-            <image class="icon" alt="bootstrap icon" src="./images/icons/bootstrap.png">
-            <p class="stack-title">Bootstrap</p>
-          </div>
-          <div class="icon-container">
-            <image class="icon" alt="bulma icon" src="./images/icons/bulma.png"></image>
-            <p class="stack-title">Bulma</p>
-          </div>
-          <div class="icon-container">
-            <image class="icon" alt="nodejs icon" src="./images/icons/nodejs.svg">
-            <p class="stack-title">NodeJS</p>
-          </div>
-          <div class="icon-container">
-            <image class="icon" alt="python icon" src="./images/icons/python.png">
-            <p class="stack-title">Python</p>
-          </div>
-          <div class="icon-container">
-            <image class="icon" alt="django icon" src="./images/icons/django.svg">
-            <p class="stack-title">Django</p>
-          </div>
-          <div class="icon-container">
-            <image class="icon" alt="postgresql icon" src="./images/icons/postgresql.svg">
-            <p class="stack-title">PostgreSQL</p>
-          </div>
-          <div class="icon-container">
-            <image class="icon" alt="mongodb icon" src="./images/icons/mongodb-icon.svg">
-            <p class="stack-title">MongoDB</p>
-          </div>
-          <div class="icon-container">
-            <image class="icon" alt="aws icon" src="./images/icons/aws.png">
-            <p class="stack-title">AWS</p>
-          </div>
-          <div class="icon-container">
-            <image class="icon" alt="render icon" src="./images/icons/render.png">
-            <p class="stack-title">Render</p>
-          </div>
-        </div>
-      </div>
-
-      <h1 id="projects-header">My Projects</h1>
-      <div id="projects-container">
-        <div class="project a"></div>
-        <div class="project b"></div>
-        <div class="project c"></div>
-      </div>
-    </div> -->
   </body>
 
   <script src="index.js"></script>
