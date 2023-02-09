@@ -36,9 +36,8 @@ span {
 }
 
 .top-hero {
-  /* background-image: url("../images/stars.jpg");
-  background-size: cover; */
-  background-color: blue;
+  background-image: url("../images/stars.jpg");
+  background-size: cover;
 }
 
 .title, .subtitle, .navbar-item {
