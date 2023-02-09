@@ -141,10 +141,10 @@ span {
   border-radius: 5px;
 }
 
-#first-container {
+/* #first-container {
   display: flex;
   justify-content: center;
-}
+} */
 
 .appear {
   -webkit-transition: all 0.8s;
