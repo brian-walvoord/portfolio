@@ -137,14 +137,15 @@ span {
 .headshot {
   height: 400px;
   width: 500px;
+  min-height: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
 
-/* #first-container {
+#first-container {
   display: flex;
   justify-content: center;
-} */
+}
 
 .appear {
   -webkit-transition: all 0.8s;
